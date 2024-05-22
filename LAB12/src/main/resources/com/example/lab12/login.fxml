@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab12.LoginController">
+    <padding><Insets bottom="10" left="10" right="10" top="10" /></padding>
+    <VBox alignment="CENTER" blendMode="SRC_ATOP" prefHeight="216.0" prefWidth="168.0" spacing="10">
+        <Label styleClass="header" text="Login Page">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <Label styleClass="header" text="Enter here" />
+        <TextField fx:id="usernameField" promptText="Username" styleClass="text-field" />
+        <PasswordField fx:id="passwordField" promptText="Password" styleClass="text-field" />
+        <Button onAction="#handleLogin" styleClass="button" text="Login" />
+        <Button onAction="#showRegister" styleClass="button" text="Register" />
+      <effect>
+         <Lighting>
+            <bumpInput>
+               <Shadow />
+            </bumpInput>
+            <light>
+               <Light.Distant />
+            </light>
+         </Lighting>
+      </effect>
+    </VBox>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
